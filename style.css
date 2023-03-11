@@ -1,0 +1,146 @@
+:root{
+    --color_blue: #2196F3;
+    --color-white: #FFFFFF;;
+    --color-black: #212121;
+    --color_grey: #757575;
+    --background_dark: #2F303A;
+    --background_white: #F5F4FA;
+    --color_rgba: rgba(255, 255, 255, 0.6)
+}
+body{
+    color: var(--color_grey);
+    background-color: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+}
+address{
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+text-align: center;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+}
+h2, h3{
+    color: var(--color-black)
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.nav a{
+    color: var(--color-black);
+}
+.nav a:hover,
+.nav a:focus{
+    color: var(--color_blue)
+}
+address a{
+    color: var(--color_grey);
+}
+.address__list a:hover,
+.address__list a:focus{
+    color: var(--color_blue)
+}
+.nav,
+.address__list{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+}
+.address{
+    color: var(--color_rgba)
+}
+.logo{
+color: var(--color-black);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+}
+footer .logo{
+    color: var(--color-white)
+}
+.logo span{
+    color: var(--color_blue)
+}
+.hero{
+    background-color: var(--background_dark)
+}
+.hero h1{
+    color: var(--color-white)
+}
+.hero button{
+    background-color: var(--color_blue);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+.comands{
+    background-color: var(--background_white);
+}
+.comands h3{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+}
+.comands p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+}
+footer{
+    background-color: var(--background_dark)
+}
+.city{
+    color: var(--color-white);
+}
+.skills h3{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+}
+.skills p,
+footer li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.nav .link{
+    color: var(--color_blue)
+}
+                                                   /* PORTFOLIO*/
+
+.check p{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+}
+.check button{
+    background-color: var(--background_white)
+}
+.check button:hover,
+.check button:focus{
+    color: var(--color-white);
+    background-color:var(--color_blue);
+    cursor: pointer;
+}
+.options h3{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+}
+.options p{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+}
