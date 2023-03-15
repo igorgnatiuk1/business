@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Business</title>
 </head>
 <body>
-    <header>
-        <nav>
-           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-            <ul class="nav">
-                <li ><a href="#" class="link">Студия</a></li>
-                <li><a href="./portfolio/index.html">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul class="address__list">
-                <li class="addres__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="addres__item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+                 <ul class="nav">
+                     <li ><a href="#" class="link">Студия</a></li>
+                     <li><a href="./portfolio/index.html">Портфолио</a></li>
+                     <li><a href="#">Контакты</a></li>
+                 </ul>
+             </nav>
+             <address class="header__address">
+                 <ul class="address__list">
+                     <li class="address__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                     <li class="address__item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                 </ul>
+             </address>
+        </div>
         
     </header>
     <main>
         <section class="hero">
-            <h1 >Эффективные решения для вашего бизнеса</h1>
+            <h1 >Эффективные решения <br/>для вашего бизнеса</h1>
             <button type="button">Заказать услугу</button>
         </section>
         <section class="skills">
-            <!-- <h2>Нашы преимущества</h2> -->
-            <ul>
+          <div class="container">
+              <!-- <h2>Нашы преимущества</h2> -->
+              <ul>
                 <li>
                     <h3>Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -54,51 +58,57 @@
                 </li>
                 
             </ul>
+          </div>
         </section>
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./img/img.jpg" alt="Работа за компом" width="370" height="294"></li>
-                <li><img src="./img/img(1).jpg" alt="Работа за ноутом" width="370" height="294"></li>
-                <li><img src="./img/img(2).jpg" alt="Работа за планшетом" width="370" height="294"></li>
-            </ul>
+        <section class="work">
+            <div class="container">
+                <h2>Чем мы занимаемся</h2>
+                <ul>
+                    <li><img src="./img/img.jpg" alt="Работа за компом" width="370" height="294"></li>
+                    <li><img src="./img/img(1).jpg" alt="Работа за ноутом" width="370" height="294"></li>
+                    <li><img src="./img/img(2).jpg" alt="Работа за планшетом" width="370" height="294"></li>
+                </ul>
+            </div>
         </section>
         <section class="comands">
+           <div class="container">
             <h2>Наша команда</h2>
             <ul>
                 <li>
                     <img src="./img/img3.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                    <div>
+                    <div class="teams">
                         <h3>Игорь Демьяненко</h3>
                         <p>Product Designer</p>
                     </div>
                 </li>
                 <li>
                     <img src="./img/4.jpg" alt="Ольга Репина" width="270" height="260">
-                    <div>
+                    <div class="teams">
                         <h3>Ольга Репина</h3>
                         <p>Frontend Developer</p>
                     </div>
                 </li>
                 <li>
                     <img src="./img/5.jpg" alt="Николай Тарасов" width="270" height="260">
-                    <div>
+                    <div class="teams">
                         <h3>Николай Тарасов</h3>
                         <p>Marketing</p>
                     </div>
                 </li>
                 <li>
                     <img src="./img/6.jpg" alt="Михаил Ермаков" width="270" height="260">
-                    <div>
+                    <div class="teams">
                         <h3>Михаил Ермаков</h3>
                         <p>UI Designer</p>
                     </div>
                 </li>
                 
             </ul>
+           </div>
         </section>
     </main>
     <footer>
+      <div class="container">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
         <address class="address">
             <ul>
@@ -107,6 +117,7 @@
                 <li>+38 099 111 11 11</li>
             </ul>
         </address>
+      </div>
     </footer>
 </body>
 </html>

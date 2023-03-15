@@ -1,6 +1,6 @@
 :root{
     --color_blue: #2196F3;
-    --color-white: #FFFFFF;;
+    --color-white: #FFFFFF;
     --color-black: #212121;
     --color_grey: #757575;
     --background_dark: #2F303A;
@@ -12,23 +12,52 @@ body{
     background-color: var(--color-white);
     font-family: 'Roboto', sans-serif;
 }
+img{
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 address{
     font-style: normal;
+    margin-left: auto;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.header .nav{
+    display: flex;
+}
+.header nav{
+    display: flex;
+    align-items: center;
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 a{
     text-decoration: none;
 }
 h1{
+    margin: 0;
 text-align: center;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 }
 h2, h3{
-    color: var(--color-black)
+    color: var(--color-black);
+    margin: 0;
+    
 }
 h2{
     font-weight: 700;
@@ -38,7 +67,13 @@ h2{
 
 .nav a{
     color: var(--color-black);
+    display: inline-block;
+    padding: 32px 0;
 }
+.nav li:not(:last-child){
+    margin-right: 50px;
+}
+
 .nav a:hover,
 .nav a:focus{
     color: var(--color_blue)
@@ -50,11 +85,16 @@ address a{
 .address__list a:focus{
     color: var(--color_blue)
 }
+.address__item:first-child{
+    margin-right: 50px;
+}
 .nav,
 .address__list{
+    display: flex;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
+margin-left: auto;
 }
 .address{
     color: var(--color_rgba)
@@ -66,6 +106,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 }
+header .logo{
+margin-right: 93px;
+}
 footer .logo{
     color: var(--color-white)
 }
@@ -73,10 +116,13 @@ footer .logo{
     color: var(--color_blue)
 }
 .hero{
-    background-color: var(--background_dark)
+    background-color: var(--background_dark);
+    text-align: center;
 }
 .hero h1{
-    color: var(--color-white)
+    color: var(--color-white);
+    margin-bottom: 30px;
+    
 }
 .hero button{
     background-color: var(--color_blue);
@@ -84,6 +130,8 @@ footer .logo{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 .comands{
     background-color: var(--background_white);
@@ -108,6 +156,7 @@ footer{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
+margin-bottom: 10px;
 }
 .skills p,
 footer li{
@@ -115,8 +164,78 @@ footer li{
     font-size: 14px;
     line-height: 1.71;
 }
+.skills ul{
+    display: flex;
+}
+.skills li{
+    width: calc((100% - 90px)/4);
+}
+.skills li:not(:last-child){
+    margin-right: 30px;
+}
+.skills p{
+    margin: 0;
+}
+.skills{
+    padding: 94px 0;
+}
 .nav .link{
     color: var(--color_blue)
+}
+                                              /* WORK */
+.work ul{
+    display: flex;
+}
+.work li:not(:last-child){
+    margin-right: 30px;
+}
+.work h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.work{
+    padding-bottom: 94px;
+}
+                                                   /* COMANDS */
+.comands{
+    padding: 94px 0;
+}
+.comands ul{
+    display: flex;
+}
+.comands li{
+    width: calc((100% - 90px)/4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+overflow: hidden;
+}
+.comands li:not(:last-child){
+    margin-right: 30px;
+}
+
+.comands h3{
+    margin-bottom: 10px;
+}
+.comands h2{
+    margin-bottom: 50px;
+}
+.teams{
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 30px 0;
+}
+.teams p{
+    margin: 0;
+}
+                                                    /* FOOTER */
+footer .logo{
+    margin-bottom: 20px;
+}
+.address li:not(:last-child){
+    margin-bottom: 9px;
+}
+footer{
+    padding: 60px 0;
 }
                                                    /* PORTFOLIO*/
 
@@ -124,15 +243,31 @@ footer li{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+margin: 0;
+}
+.check h3{
+    margin-bottom: 4px;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.check li:not(:last-child){
+    margin-right: 8px;
 }
 .check button{
-    background-color: var(--background_white)
+    background-color: var(--background_white);
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
 }
 .check button:hover,
 .check button:focus{
     color: var(--color-white);
     background-color:var(--color_blue);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .options h3{
 font-weight: 700;
@@ -143,4 +278,25 @@ line-height: 2;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
+margin: 0;
+}
+.portfolio{
+    padding: 94px 0;
+    border-top: 1px solid #EEEEEE;;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+}
+.options li:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.options li:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+}
+.options div{
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
