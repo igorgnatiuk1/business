@@ -79,7 +79,10 @@ h2{
     color: var(--color_blue)
 }
 address a{
+    display: flex;
+    align-items: center;
     color: var(--color_grey);
+
 }
 .address__list a:hover,
 .address__list a:focus{
@@ -88,14 +91,27 @@ address a{
 .address__item:first-child{
     margin-right: 50px;
 }
+/* .address__item{
+    display: flex;
+    align-items: center;
+} */
+.address__item svg{
+    margin-right: 8px;
+    fill: currentColor;
+}
+/* .address__item svg:hover{
+    fill: currentColor;
+} */
+
 .nav,
 .address__list{
-    display: flex;
+display: flex;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-margin-left: auto;
+
 }
+
 .address{
     color: var(--color_rgba)
 }
@@ -116,8 +132,16 @@ footer .logo{
     color: var(--color_blue)
 }
 .hero{
-    background-color: var(--background_dark);
+    display: flex;
+    align-items:center;
     text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    background-color: var(--background_dark);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .hero h1{
     color: var(--color-white);
@@ -170,6 +194,28 @@ footer li{
 .skills li{
     width: calc((100% - 90px)/4);
 }
+.skills li::before{
+    display: block;
+    content:"";
+    height: 120px;
+    background: #F5F4FA;
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: 30px;
+
+}
+.skills li:nth-child(1)::before{
+    background-image: url(./img/Group.svg)
+}
+.skills li:nth-child(2)::before{
+    background-image: url(./img/clock.svg)
+}
+.skills li:nth-child(3)::before{
+    background-image: url(./img/diagram.svg)
+}
+.skills li:nth-child(4)::before{
+    background-image: url(./img/astronaut.svg)
+}
 .skills li:not(:last-child){
     margin-right: 30px;
 }
@@ -203,13 +249,13 @@ footer li{
 .comands ul{
     display: flex;
 }
-.comands li{
+.name{
     width: calc((100% - 90px)/4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 overflow: hidden;
 }
-.comands li:not(:last-child){
+.name:not(:last-child){
     margin-right: 30px;
 }
 
@@ -226,9 +272,72 @@ overflow: hidden;
 }
 .teams p{
     margin: 0;
+    margin-bottom: 16px;
+}
+.social{
+    justify-content: center;
+}
+.social li:not(:last-child){
+    margin-right: 10px;
+}
+
+.social a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: tomato; */
+    align-items: center;
+    justify-content: center;
+}
+.social a:hover{
+background-color: var(--color_blue)
+}
+.social a{
+    fill: var(--color_grey);
+}
+.social a:hover{
+    fill: var(--color-white);
+}
+                                                   /* CLIENT */
+.client{
+    padding: 94px 0;
+    text-align: center;
+}
+.client h2{
+    margin-bottom: 50px;
+}
+.client ul{
+    display: flex;
+}
+.client li{
+    
+    border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+.client li:hover,
+.client li:focus{
+    border: 1px solid var(--color_blue)
+}
+.client li:not(:last-child){
+    margin-right: 30px;
+}
+.client a{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+}
+.client a{
+    fill: #AFB1B8;
+}
+.client a:hover{
+    fill: var(--color_blue)
 }
                                                     /* FOOTER */
 footer .logo{
+    display: block;
     margin-bottom: 20px;
 }
 .address li:not(:last-child){
@@ -236,6 +345,29 @@ footer .logo{
 }
 footer{
     padding: 60px 0;
+}
+footer .container{
+    display: flex;
+    align-items: baseline
+}
+.call ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+.call b{
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+.call a{
+    background: rgba(255, 255, 255, 0.1);
+}
+.call svg{
+    fill: var(--color-white)
+}
+.brand{
+    margin-right: 70px;
 }
                                                    /* PORTFOLIO*/
 
