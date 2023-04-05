@@ -43,19 +43,19 @@
 }
 .skills__item--antenna::before {
   @extend %icon;
-  background-image: url(../../icons/antenna.svg);
+  background-image: url(../.././icons/antenna.svg);
 }
 .skills__item--clock::before {
   @extend %icon;
-  background-image: url(../../icons/clock.svg);
+  background-image: url(../.././icons/clock.svg);
 }
 .skills__item--diagram::before {
   @extend %icon;
-  background-image: url(../../icons/diagram.svg);
+  background-image: url(../.././icons/diagram.svg);
 }
 .skills__item--astronaut::before {
   @extend %icon;
-  background-image: url(../../icons/astronaut.svg);
+  background-image: url(../.././icons/astronaut.svg);
 }
 .skills {
   padding: 60px 0;
