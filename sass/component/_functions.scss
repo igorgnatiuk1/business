@@ -1,0 +1,20 @@
+.functions {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+  }
+}
+.functions__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.functions__item {
+  width: calc((100% - 60px) / 3);
+}
+.functions__title {
+  text-align: center;
+  @include font("Roboto", 700, 36px, 42/36);
+  margin-bottom: 50px;
+}

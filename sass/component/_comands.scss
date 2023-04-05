@@ -1,0 +1,95 @@
+.comands {
+  padding: 60px 0;
+  text-align: center;
+  background: #f5f4fa;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.comands__title {
+  margin-bottom: 30px;
+  @include font("Roboto", 700, 28px, 1.17);
+  @media screen and (min-width: 1200px) {
+    @include font("Roboto", 700, 36px, 42 / 36);
+    margin-bottom: 50px;
+  }
+}
+.comands__img {
+  display: block;
+  margin-bottom: 30px;
+}
+.comands__name {
+  @include font("Roboto", 500, 16px, 1.18);
+  margin-bottom: 10px;
+}
+.comands__job {
+  @include font("Roboto", 400, 16px, 1.18);
+  color: #757575;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.comands__list {
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+.comand__item {
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin: 0;
+  }
+}
+.comand__tumb {
+  padding-bottom: 24px;
+}
+.social-network {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.social-network__link {
+  display: flex;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: white;
+  fill: #afb1b8;
+  transition: fill 250ms linear, background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    fill: white;
+  }
+  &.dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: white;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+}
+.social-network__item:not(:last-child) {
+  margin-right: 10px;
+}

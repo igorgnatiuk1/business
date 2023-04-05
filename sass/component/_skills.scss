@@ -1,0 +1,65 @@
+.skills__name {
+  @include font("Roboto", 700, 14px, 1.17);
+  text-align: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+.skills__description {
+  margin: 0;
+  @include font("Roboto", 400, 14px, 1.71);
+  color: #757575;
+}
+.skills__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+.skills__list li:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+.skills__list li {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.skills__item--antenna::before {
+  @extend %icon;
+  background-image: url(../../icons/antenna.svg);
+}
+.skills__item--clock::before {
+  @extend %icon;
+  background-image: url(../../icons/clock.svg);
+}
+.skills__item--diagram::before {
+  @extend %icon;
+  background-image: url(../../icons/diagram.svg);
+}
+.skills__item--astronaut::before {
+  @extend %icon;
+  background-image: url(../../icons/astronaut.svg);
+}
+.skills {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
