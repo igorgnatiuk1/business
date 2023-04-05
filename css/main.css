@@ -480,19 +480,19 @@ button {
 }
 
 .skills__item--antenna::before {
-  background-image: url(../.././icons/antenna.svg);
+  background-image: url(.././icons/antenna.svg);
 }
 
 .skills__item--clock::before {
-  background-image: url(../.././icons/clock.svg);
+  background-image: url(.././icons/clock.svg);
 }
 
 .skills__item--diagram::before {
-  background-image: url(../.././icons/diagram.svg);
+  background-image: url(.././icons/diagram.svg);
 }
 
 .skills__item--astronaut::before {
-  background-image: url(../.././icons/astronaut.svg);
+  background-image: url(../icons/astronaut.svg);
 }
 
 .skills {
@@ -937,7 +937,7 @@ button {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../../icons/send.svg);
+  background-image: url(.././icons/send.svg);
   margin-left: 10px;
 }
 
