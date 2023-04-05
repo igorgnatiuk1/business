@@ -937,7 +937,7 @@ button {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../.././icons/send.svg);
+  background-image: url(../../icons/send.svg);
   margin-left: 10px;
 }
 
