@@ -100,7 +100,7 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  color: #212121;
+  color: blue;
 }
 .logo span {
   color: #2196f3;
@@ -108,7 +108,7 @@ button {
 .logo.white {
   display: inline-block;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 @media screen and (min-width: 1200px) {
   .logo {
